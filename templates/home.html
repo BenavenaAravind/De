@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aravind</title>
+</head>
+<body bgcolor="green">
+   {% block content %}
+   <form action="{% url 'details' %}" method="POST">
+    {% csrf_token %}
+   ENTER YOUR NAME : <input type ="text" name='ara' ><br>
+   ENTER YOUR AGE : <input type ="number" name="num1"><br>
+   ENTER YOUR PHONE NUMBER: <input type ="number"><br>
+   ENTER YOUR EMAIL ID : <input type ="email" ><br>
+   ENTER YOUR PASSPORTSIZE PHOTO :<input type="image" ><br>
+   <input type ="submit" >
+   </form>
+   {% endblock %}
+
+   
+   
+</body>
+</html>
